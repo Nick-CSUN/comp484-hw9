@@ -62,8 +62,7 @@ let conversionOutput =
   result4;
 
 // Display results
-document.getElementById("numberConversionOutput").innerHTML = conversionOutput;
-
+document.getElementById("numberConversionOutput").innerHTML = conversionOutput
 
 // ==========================
 // Part 3: Math & Formatting
@@ -101,7 +100,7 @@ document.getElementById("mathOutput").innerHTML = mathResults;
 // Condition 1: check NaN
 let message1;
 if (Number.isNaN(num3)) {
-  message1 = "The value 'hello' is NOT a valid number.";
+  message1 = "The value '"+value3+"' is NOT a valid number.";
 } else {
   message1 = "The value is a valid number.";
 }
@@ -115,5 +114,8 @@ if (total > 30) {
 }
 
 // Append messages
+document.getElementById("numberConversionOutput").innerHTML +=
+  "<br><br>" + message1;
+
 document.getElementById("mathOutput").innerHTML +=
-  "<br><br>" + message1 + "<br>" + message2;
+  "<br><br>" + message2;
